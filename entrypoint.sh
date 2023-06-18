@@ -5,6 +5,6 @@ shuf color.csv > random-color.csv
 color=$(head -n 1 random-color.csv) 
 sed -i "s/<NOMBRE>/$nombre/g" index.txt
 sed -i "s/<COLOR>/$color/g" index.txt
-mv index.txt index.html
+mv index.txt /var/www/html/index.html
 rm *.csv
 exec "$@"
