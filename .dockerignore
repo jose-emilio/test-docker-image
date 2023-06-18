@@ -1,3 +1,4 @@
 buildspec.yml
+appspec.yml
 Dockerfile
 .*
