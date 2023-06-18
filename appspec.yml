@@ -1,0 +1,19 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: <TASK_DEFINITION>
+        LoadBalancerInfo:
+          ContainerName: "httpd"
+          ContainerPort: 80
+        PlatformVersion: "LATEST"
+        NetworkConfiguration:
+          AwsvpcConfiguration:
+            Subnets: ["subnet-02e429c6f2a7b1605","subnet-09d6d0c5193fc3bfd","subnet-0a0dc342f66915e39","subnet-07dc0e352f22556fd","subnet-057000e7e002cd939","subnet-05fd2dbf72bb1c83b"]
+            SecurityGroups: ["sg-04e359871699b4e94"]
+            AssignPublicIp: "DISABLED"
+        CapacityProviderStrategy:
+          - Base: 1
+            CapacityProvider: "FARGATE"
+            Weight: 1
