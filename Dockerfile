@@ -1,4 +1,4 @@
-FROM public.ecr.aws/ubuntu/ubuntu:20.04
+FROM public.ecr.aws/ubuntu/ubuntu:edge
 RUN apt-get update && apt-get install -y apache2
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 EXPOSE 80
