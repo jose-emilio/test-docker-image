@@ -54,7 +54,7 @@
 
 <body class="htmlNoPages">
   <div class="gwd-div-1bjf"></div>
-  <p class="gwd-p-1yr3"><strong>Bienvenido a Amazon ECS</strong>. Soy un contenedor y me llamo <NOMBRE></p>
+  <p class="gwd-p-1yr3"><strong>Bienvenido a Amazon ECS</strong>. Hola, soy un contenedor y me llamo <NOMBRE></p>
 </body>
 
 </html>
